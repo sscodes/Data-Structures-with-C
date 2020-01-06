@@ -27,7 +27,7 @@ void dequeue(struct queue *q)
 	{
 		int x;
 		q->front++;
-		x=q->front;
+		x=q->Q[q->front];
 		printf("Element %d is deleted\n", x);
 	}
 }
