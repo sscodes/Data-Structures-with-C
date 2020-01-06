@@ -11,7 +11,7 @@ void push(struct stack *st)
 	printf("Enter the element to be pushed : ");
 	scanf("%d",&x);
 	if(st->top==st->size-1)
-	printf("Stack Overflow!");
+	printf("Stack Overflow!\n");
 	else
 	{
 		st->top++;
@@ -23,7 +23,7 @@ void pop(struct stack *st)
 	int x;
 	if(st->top==-1)
 	{
-		printf("Stack Underflow!");
+		printf("Stack Underflow!\n");
 	}
 	else
 	{
@@ -36,7 +36,7 @@ void display(struct stack *st)
 {
 	if(st->top==-1)
 	{
-		printf("Stack Underflow!");
+		printf("Stack Underflow!\n");
 	}
 	int i=st->top;
 	while(i!=-1)
