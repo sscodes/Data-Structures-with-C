@@ -9,7 +9,7 @@ struct queue
 void enqueue(struct queue *q)
 {
 	if(q->rear==q->size-1)
-	printf("Queue Overflow!");
+	printf("Queue Overflow!\n");
 	else
 	{
 		int x;
@@ -22,7 +22,7 @@ void enqueue(struct queue *q)
 void dequeue(struct queue *q)
 {
 	if(q->rear==q->front)
-	printf("Queue Underflow!");
+	printf("Queue Underflow!\n");
 	else
 	{
 		int x;
@@ -34,7 +34,7 @@ void dequeue(struct queue *q)
 void display(struct queue *q)
 {
 	if(q->front==q->rear)
-	printf("Queue Underflow!");
+	printf("Queue Underflow!\n");
 	int i=q->front+1;
 	while(i!=q->rear+1)
 	{
